@@ -44,7 +44,7 @@ js_dynsnap_parser.pl
 	js_dynsnap_parser.pl -f <Dynamic snapshot filename>  
 
 	example : 
-	js_dynsnap_parser.pl -f 'dynsnap.out
+	js_dynsnap_parser.pl -f 'dynsnap.out'
 ```   
 
 
