@@ -31,7 +31,22 @@ js_delta_db2pd_edu_no_excel.pl
  
 ``` example
 js_delta_db2pd_edu_no_excel.pl -f='db2pd.edu*'
-```
+```   
+
+js_dynsnap_parser.pl
+===========
+
+   This program helps to create a excel output parsing one DB2 dynamic snapshot file   
+   for analysis like finding top SQL with interested value like average elapsed time, rows read etc.    
+
+``` 
+	Usage :
+	js_dynsnap_parser.pl -f <Dynamic snapshot filename>  
+
+	example : 
+	js_dynsnap_parser.pl -f 'dynsnap.out
+```   
+
 
 
 
