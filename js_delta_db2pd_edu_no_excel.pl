@@ -137,7 +137,8 @@ sub doParseEduFile {
 		#print "$_" if $DEBUG;
 
 		## get timestamp of db2pd -edu output file. This pattern will come only once per file.
-		if ( m/^Database Member\s.+Date\s(.+)$/ ) {
+		#if ( m/^Database Member\s.+Date\s(.+)$/ ) {
+		if ( m/^Database\s.+Date\s(.+)$/ ) {
 			$fileTimeStamp = $1;
 			push @parseFileList, { fileName => $fn, fileTimeStamp => $fileTimeStamp };
 		}

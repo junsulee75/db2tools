@@ -19,6 +19,7 @@
  # js_delta_db2pd_edu.pl -f='db2pd.edu*'
  # Date : Nov.10, 2017
  # Revision History
+ # - Mar. 03, 2020 : Database Partition / Database Member
  # - Nov. 10, 2017 : 
  # - Sep. 09, 2018 : deltaVal decimal processing
  # - Sep. 10, 2018 : Added Excel output logic
@@ -137,7 +138,8 @@ sub doParseEduFile {
 		#print "$_" if $DEBUG;
 
 		## get timestamp of db2pd -edu output file. This pattern will come only once per file.
-		if ( m/^Database Member\s.+Date\s(.+)$/ ) {
+		#if ( m/^Database Member\s.+Date\s(.+)$/ ) {
+		if ( m/^Database\s.+Date\s(.+)$/ ) {
 			$fileTimeStamp = $1;
 			push @parseFileList, { fileName => $fn, fileTimeStamp => $fileTimeStamp };
 		}
