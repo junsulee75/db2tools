@@ -1,5 +1,61 @@
-# db2tools
+# db2tools   
 
+These are my niche Db2 tool gadgets collection written by myself.  
+I am not intending to make great awesome tools   
+but my main interested point is saving time if I feel it's better to have a automated script doing same job in the future.   
+
+js_db2mon_get_info_by_SQL.pl  
+===========
+
+  Imagine you have event few or hundreds of db2mon output files and you want to see performance pattern for a interested SQL statement in a one shot.   
+  This is the script that can help.  
+  It can be also used for grep some strings pattern under a db2mon output section.   
+
+``` example
+Usage:
+js_db2mon_get_info_by_SQL.pl -f <filename> -s <section> -k <partial SQL keyword>
+-f <filenames>
+-s <section name>
+  'Top SQL statements by execution time '
+  'Top SQL statements by execution time, aggregated by PLANID'
+  'Wait time breakdown for top SQL statements by execution time '
+  'Top SQL statements by time spent waiting'
+  'IO statistics per stmt - top statements by execution time'
+ ...
+-d <debug mode> -- 1:debug
+example : 
+js_db2mon_get_info_by_SQL.pl -f 'db2mon*' -s 'Top SQL statements by execution time ' -k 'call TSRQC00.USP_GET_MERCHANT_DTL'
+```  
+
+[More detail Example](examples/js_db2mon_get_info_by_SQL.pl.md) 
+
+js_db2mon_cf_chek.pl
+===========
+
+In case you have many 'db2mon' outputs and want to see the trend of "Round-trip CF command" and CF-side command execution time of an interested CF function, you may sick of opening each file by vi.  
+Also grep/awk would not be easy to get it in one shot.  
+Then, this script may help to save the time and get the output quickly.   
+
+``` example
+js_db2mon_cf_check.pl
+
+	js_db2mon_cf_check.pl <options>
+
+	-f : File names
+	-i : Interested CF functions
+	-d : debug mode ( 0 : disable, 1 : Enable )
+
+	Example)
+	js_db2mon_cf_check.pl -f 'db2mon*' -i 'WriteAndRegisterMultiple'
+```  
+
+Benefit)
+Imagine you want to do the same manually.  
+ ( Opening each file by 'vi' and check the interested things.   
+   Approx. 30 seconds for the fast hands x 200 outputs. => More than 1.5 hours)  
+Using the script, 1 second. So we may save 1~2 hours for the same kind of work.
+
+[More detail Example](examples/js_db2mon_cf_check.pl.md) 
 
 js_delta_db2pd_edu.pl
 ===========
@@ -16,7 +72,7 @@ js_delta_db2pd_edu.pl
  
 ``` example
 js_delta_db2pd_edu.pl -f='db2pd.edu*'
-```
+```  
 
 js_delta_db2pd_edu_no_excel.pl
 ===========
@@ -32,6 +88,7 @@ js_delta_db2pd_edu_no_excel.pl
 ``` example
 js_delta_db2pd_edu_no_excel.pl -f='db2pd.edu*'
 ```   
+[Example](examples/js_delta_db2pd_edu_no_excel.pl.md) 
 
 js_dynsnap_parser.pl
 ===========
@@ -48,5 +105,5 @@ js_dynsnap_parser.pl
 ```   
 
 
-
+test
 
