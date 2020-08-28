@@ -73,6 +73,7 @@ js_delta_db2pd_edu.pl
 ``` example
 js_delta_db2pd_edu.pl -f='db2pd.edu*'
 ```  
+[Example](examples/js_delta_db2pd_edu.pl.md) 
 
 js_delta_db2pd_edu_no_excel.pl
 ===========
@@ -104,6 +105,6 @@ js_dynsnap_parser.pl
 	js_dynsnap_parser.pl -f 'dynsnap.out'
 ```   
 
+[Example](examples/js_dynsnap_parser.pl.md)   
 
-test
 
