@@ -3,7 +3,6 @@
 Some of my niche Db2 tool gadgets collection written by myself.  
 I am not intending to make great awesome tools   
 but my main interested point is saving time if I feel it's better to have a automated script doing same job in the future.   
-This repo is for IBM internal analysis purpose.   
 
 js_db2mon_get_info_by_SQL.pl  
 ===========
