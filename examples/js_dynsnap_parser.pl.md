@@ -1,4 +1,4 @@
-[Go to main page](https://github.com/junsulee75/db2tools)
+[Go to main page](https://github.ibm.com/junsulee/db2tools) 
 
 js_dynsnap_parser.pl  
 ===========
@@ -45,4 +45,4 @@ Then, enjoy investigation.
 
 [logo3]: images/dynsnap_03_sorted.png "dynsnap_02_sorted.png : Sorted"
 
-[Go to main page](https://github.com/junsulee75/db2tools)
+[Go to main page](https://github.ibm.com/junsulee/db2tools) 

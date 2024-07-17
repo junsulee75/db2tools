@@ -72,8 +72,9 @@ GetOptions(
 #print "1.filename : $fileName \n";
 @fileList = glob($fileName);
 
-
-if ( $inputfunction eq "SetLockState" ){
+#if ( $inputfunction eq "SetLockState" ){
+#if ( $inputfunction eq "SetLockStateMultiple" ){
+if ( $inputfunction eq "SetLockState" or $inputfunction eq "SetLockStateMultiple" ){
 	$cfInputFunction = "ProcessSetLockState";
 }else{
 	$cfInputFunction = $inputfunction;

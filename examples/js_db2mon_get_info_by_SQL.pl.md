@@ -1,4 +1,4 @@
-[Go to main page](https://github.com/junsulee75/db2tools)
+[Go to main page](https://github.ibm.com/junsulee/db2tools)
 
 js_db2mon_get_info_by_SQL.pl  
 ===========
@@ -62,4 +62,4 @@ MEMBER PCT_WAIT PCT_LG_DSK PCT_LG_BUF PCT_LOCK PCT_GLB_LOCK PCT_LTCH PCT_RCLM PC
 ```
 
 
-[Go to main page](https://github.com/junsulee75/db2tools)
+[Go to main page](https://github.ibm.com/junsulee/db2tools) 

@@ -1,4 +1,4 @@
-[Go to main page](https://github.com/junsulee75/db2tools)
+[Go to main page](https://github.ibm.com/junsulee/db2tools)
 
 js_delta_db2pd.edu_no_excel.pl  
 ===========
@@ -20,7 +20,7 @@ js_delta_db2pd_edu_no_excel.pl -f='db2pd.edu*'
 Calculates CPU delta time from mutlple 'db2pd -edus' samples.  
 
 ```
- $ /users/a/u/au379509/bin/js_delta_db2pd_edu_no_excel.pl -f='db2pd.edu*' > edu_delta.txt
+ $ /common/public/artifacts/db2/junsulee/github/db2tools/js_delta_db2pd_edu_no_excel.pl -f='db2pd.edu*' > edu_delta.txt
 
 T1 : 2018-11-16-16.12.38.734640
  T2 : 2018-11-16-16.20.27.330274
@@ -50,14 +50,14 @@ T1 : 2018-11-16-16.12.38.734640
 Calculates CPU delta time from two samples of 'db2pd -edus'.   (For example, within 'DB2PD' directory from 'db2fodc -full hang' collection.)   
 
 ```
- $ /users/a/u/au379509/bin/js_delta_db2pd_edu_no_excel.pl -f='db2pd_edu*' 
+ $ /common/public/artifacts/db2/junsulee/github/db2tools/js_delta_db2pd_edu_no_excel.pl -f='db2pd_edu*' 
 
 ....
 
 2019-09-02-12.07.17.350389
 2019-09-02-12.08.56.923593
 
- (EDUID/EDU NAME) / Total CPU (USER+SYS) delta value => Mathing Kernel TID
+ (EDUID/EDU NAME) / Total CPU (USER+SYS) delta value => Matching Kernel TID
 74828/db2agent    8.202687 
 74723/db2agent    8.190241 
 146287/db2agent   8.17356  
@@ -79,4 +79,4 @@ Calculates CPU delta time from two samples of 'db2pd -edus'.   (For example, wit
 ```
 
 
-[Go to main page](https://github.com/junsulee75/db2tools)
+[Go to main page](https://github.ibm.com/junsulee/db2tools) 

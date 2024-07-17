@@ -1,4 +1,4 @@
-[Go to main page](https://github.com/junsulee75/db2tools)
+[Go to main page](https://github.ibm.com/junsulee/db2tools)
 
 js_db2mon_cf_check.pl  
 ===========
@@ -72,4 +72,4 @@ Imagine you want to do the same manually.
    Approx. 30 seconds for the fast hands x 200 outputs. => More than 1.5 hours)
 Using the script, 1 second. So we may save 1~2 hours for the same kind of work.
 
-[Go to main page](https://github.com/junsulee75/db2tools)
+[Go to main page](https://github.ibm.com/junsulee/db2tools) 

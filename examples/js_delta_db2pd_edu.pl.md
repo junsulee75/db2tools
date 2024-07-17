@@ -1,4 +1,4 @@
-[Go to main page](https://github.com/junsulee75/db2tools)
+[Go to main page](https://github.ibm.com/junsulee/db2tools) 
 
 js_delta_db2pd.edu.pl  
 ===========
@@ -101,4 +101,4 @@ It shows the top CPU consumer EDUs.
 
 [logo3]: images/edu_delta_03_sorted.png "edu_delta_03_sorted.png : Sorted"
 
-[Go to main page](https://github.com/junsulee75/db2tools)
+[Go to main page](https://github.ibm.com/junsulee/db2tools) 
