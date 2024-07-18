@@ -1,0 +1,220 @@
+=head2 Sun Jul  2 11:23:47 2023: C<Module> L<Shell|Shell>
+
+=over 4
+
+=item *
+
+C<installed into: /work/perl/PERLLNXLIB/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.73>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Sun Jul  2 11:30:49 2023: C<Module> L<Number::Format|Number::Format>
+
+=over 4
+
+=item *
+
+C<installed into: /work/perl/PERLLNXLIB/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.76>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Sun Jul  2 11:30:54 2023: C<Module> L<Statistics::Basic|Statistics::Basic>
+
+=over 4
+
+=item *
+
+C<installed into: /work/perl/PERLLNXLIB/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.6611>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Sun Jul  2 11:32:07 2023: C<Module> L<Statistics::RankCorrelation|Statistics::RankCorrelation>
+
+=over 4
+
+=item *
+
+C<installed into: /work/perl/PERLLNXLIB/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 0.1206>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Sun Jul  2 11:59:42 2023: C<Module> L<Switch|Switch>
+
+=over 4
+
+=item *
+
+C<installed into: /work/perl/PERLLNXLIB/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2.17>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Sun Jul  2 12:02:34 2023: C<Module> L<Data::Dumper|Data::Dumper>
+
+=over 4
+
+=item *
+
+C<installed into: /work/perl/PERLLNXLIB/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 2.183>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Sun Jul  2 12:06:05 2023: C<Module> L<Archive::Zip|Archive::Zip>
+
+=over 4
+
+=item *
+
+C<installed into: /work/perl/PERLLNXLIB/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.68>
+
+=item *
+
+C<EXE_FILES: script/crc32>
+
+=back
+
+=head2 Sun Jul  2 12:14:39 2023: C<Module> L<Excel::Writer::XLSX|Excel::Writer::XLSX>
+
+=over 4
+
+=item *
+
+C<installed into: /work/perl/PERLLNXLIB/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.11>
+
+=item *
+
+C<EXE_FILES: bin/extract_vba>
+
+=back
+
+=head2 Tue Sep 26 04:53:51 2023: C<Module> L<IO::Tty|IO::Tty>
+
+=over 4
+
+=item *
+
+C<installed into: /work/perl/PERLLNXLIB/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.17>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+
+=head2 Tue Sep 26 04:54:56 2023: C<Module> L<Expect|Expect>
+
+=over 4
+
+=item *
+
+C<installed into: /work/perl/PERLLNXLIB/lib/perl5>
+
+=item *
+
+C<LINKTYPE: dynamic>
+
+=item *
+
+C<VERSION: 1.35>
+
+=item *
+
+C<EXE_FILES: >
+
+=back
+

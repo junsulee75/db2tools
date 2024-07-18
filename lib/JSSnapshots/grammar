@@ -1,0 +1,32 @@
+
+#  $return = $item[1] is the default
+
+INTEGER		: /\d+/				
+WORDS       : m/((?:\w(?!\s+")+|\s(?!\s*"))+\w)+/ 			# got this from the internet
+OPERATOR	: /[+-\\*\\]/
+
+UNIT	:	'bytes' | 'ms' | 'Bytes' | 'shared memory' | 'milliseconds' | 'sec.ns' | 'sec.microsec' | 's'
+FUNC	:	'decimal' | 'ratio' | 'tmdiff'
+
+fullexpr : expr OPERATOR expr	{ $return = "$item[1] $item[2] $item[3]" }
+	| '(' fullexpr ')'			{ $return = "($item[2])" }
+	| expr
+
+expr : FUNC '(' fullexpr  ',' INTEGER ')'		{ $return = "$item[1] ( $item[3],$item[5] )" }
+	| FUNC '(' fullexpr ')'						{ $return = "$item[1] ( $item[3] )" }
+	| '(' fullexpr ')'							{ $return = "( $item[2] )" }
+	| fieldname OPERATOR fullexpr				{ $return = "$item[1] $item[2] $item[3]" }
+	| fieldname
+
+fieldname :  number
+	| manywords
+
+number : INTEGER '.' INTEGER		{ $return = "$item[1].$item[3]" }
+	| INTEGER
+	
+manywords :  WORDS '(' UNIT ')'			{ $return = "\$p->{'$item[1] ($item[3])'}" }
+	| WORDS 							{ $return = "\$p->{'$item[1]'}" }
+
+#| expr OPERATOR fullexpr    { $return = "$item[1] $item[2] $item[3]" }
+
+startrule: fullexpr  | expr 			
