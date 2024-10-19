@@ -19,9 +19,12 @@ import re # for regular expression
 import glob
 from pathlib import Path  ## for file search in sub directories
 
+verbose = False
+
 def usage():
-	if len(sys.argv) !=2:  # should use 2 counting program name
-		print("Usage: " + sys.argv[0] + " <db2suport directory path>")
+	#if len(sys.argv) !=2:  # should use 2 counting program name
+	if len(sys.argv) not in [2, 3]:  # should use 2 counting program name
+		print("Usage: " + sys.argv[0] + " <db2suport directory path> [-v|--verbose]")
 		sys.exit(-1)
 		return()
 
@@ -78,41 +81,54 @@ def db2NodeSummary(filename):
 	#for hostItem in host_dict.items():  # for each key(hostname) ,  retrieve the value as indices  
 	#	print(hostItem)
 
+	numHosts = len(host_dict)
+	numTotalPartitions = sum(len(indices) for indices in host_dict.values())
+	
+	if numTotalPartitions > 1:
+		print(f"\nDPF : {numTotalPartitions} partitions on {numHosts} hosts")
+
+
+	print("hostname (# of partitions) Partition range") 
+	print("==========================================") 
 	for hostname, indices in host_dict.items():  # for each key(hostname) ,  retrieve the value as indices  
 		indices.sort()
 		if len(indices) == 1:
-			print(f"{hostname} {indices[0]}")
+			print(f"{hostname} ({len(indices)}) {indices[0]}")
 		else:
-			print(f"{hostname} {indices[0]} - {indices[-1]}")
+
+			print(f"{hostname} ({len(indices)}) {indices[0]} - {indices[-1]}")
 	
-		
-
-
 def db2Node(supportPath):
 	cnt = 0
-	#print ("Searching for the path " + supportPath)
-	#for path in Path(supportPath).rglob('db2cluster_list.ps_out'):
-	for path in Path(supportPath).rglob('db2nodes.cfg.supp_cfg'):
-		print(" * " + path.name)
-		#print(path.read_text())
+	for path in Path(supportPath).rglob('db2nodes.cfg.supp_cfg*'):  # file names could be db2nodes.cfg.supp_cfg or db2nodes.cfg.supp_cfg.txt
 
 		db2NodeSummary(path)
+		if verbose:
+			print("\n\n * " + path.name)
+			print(path.read_text())
+
 		# Once we get, no need to repeat
 		cnt = cnt + 1
 		if cnt != 0:
 			break
-	
-	
-	
+		
 
 def main():
-	usage()
+
+	global verbose  # explicitly declare as global variable, otherwise, each function regards as local. 
+
+	usage() # number of argument check  
+
 	inputPath = sys.argv[1]
-	print("* db2support path : " + inputPath + "\n")
+	
+	#print("* db2support path : " + inputPath + "\n")
+	
+	if "-v" in sys.argv or "--verbose" in sys.argv:
+		verbose = True
 
 	db2Level(inputPath)
 	psList(inputPath)
 	db2Node(inputPath)
 
-main()
-
+if __name__ == "__main__":
+    main()
