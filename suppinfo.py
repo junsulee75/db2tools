@@ -61,7 +61,8 @@ def db2NodeSummary(filename):
 	
 	host_dict = {}
 
-	db2nodesPattern1 = re.compile(r'^\d+ \S+ \d+ \S+$')   ## In case of DPF => 0 host1 0 host1-priv
+	#db2nodesPattern1 = re.compile(r'^\d+ \S+ \d+ \S+$')   ## In case of DPF => 0 host1 0 host1-priv # This does not show single or DPF on single. Changed to the next line  
+	db2nodesPattern1 = re.compile(r'^\d+ \S+ \d+')   ## 0 host1 0 
 	
 	for line in lines:
 		line = line.strip()  # chomp  
